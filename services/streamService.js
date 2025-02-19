@@ -93,6 +93,7 @@ class StreamService {
     console.log('creator id : ', creatorId);
     // Get video details from the YouTube API
     const videoDetails = await youtubesearchapi.GetVideoDetails(extractedId);
+    console.log("videoDetails : ", videoDetails);
     const thumbnails = videoDetails.thumbnail.thumbnails;
     
     // Sort thumbnails by width (ascending order)
